@@ -1,0 +1,7 @@
+#The following files should not be tracked.
+#Folder
+.terraform/*
+
+#files
+*.tfstate
+*.tfstate.backup
