@@ -57,7 +57,7 @@ resource "aws_autoscaling_group" "terraform-ASG" {
   launch_configuration = aws_launch_configuration.terraform-ASG-Webserver.name
 
   min_size         = 2
-  desired_capacity = 2
+  desired_capacity = 3
   max_size         = 4
   #availability_zones = ["us-east-2a", "us-east-2b"]  
   vpc_zone_identifier = data.aws_subnets.default.ids
